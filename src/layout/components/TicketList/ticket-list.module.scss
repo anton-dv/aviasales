@@ -1,0 +1,11 @@
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.ticket-list__spinner {
+  padding-top: 30px;
+  margin-inline: auto;
+}

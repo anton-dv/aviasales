@@ -1,0 +1,27 @@
+.ticket-card-item {
+  display: flex;
+  list-style: none;
+
+  &:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
+.ticket-card-item__item {
+  width: 33%;
+}
+
+.ticket-card-item__label {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #a0b0b9
+}
+
+.ticket-card-item__info {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0;
+  color: #4a4a4a
+}
+

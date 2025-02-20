@@ -1,0 +1,42 @@
+.order-selector {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  font-size: 0;
+}
+
+.order-selector__item {
+  button {
+    text-transform: uppercase;
+    background-color: white;
+    color: #4a4a4a;
+    padding: 15px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #f2f4f7;
+
+
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+  }
+
+  &:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+  }
+}
+
+
+.order-selector__item--active button {
+  background-color: #2196f3;
+  color: white;
+}

@@ -1,0 +1,22 @@
+.ticket-filter {
+  max-width: calc(40% - 10px);
+  background-color: white;
+  box-shadow: 0 2px 8px 0 rgba($color: #000000, $alpha: 0.1);
+  border-radius: 5px;
+  height: min-content;
+  padding: 20px 0;
+}
+
+.ticket-filter__title {
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #4a4a4a;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+}
+
+.ticket-filter__list {
+  list-style: none;
+}
