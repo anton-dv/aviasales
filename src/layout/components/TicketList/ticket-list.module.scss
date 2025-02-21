@@ -9,3 +9,12 @@
   padding-top: 30px;
   margin-inline: auto;
 }
+
+.ticket-list__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  font-size: 22px;
+  color: #2196f3;
+}
