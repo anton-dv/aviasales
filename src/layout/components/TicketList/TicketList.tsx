@@ -28,7 +28,7 @@ export const TicketList: FC<TicketListProps> = ({ tickets }) => {
           <MoonLoader color="#2196f3" size={30} />
         </div>
       )}
-      {tickets.length === 0 && <div className={classes["ticket-list__empty"]}>Empty</div>}
+      {tickets.length === 0 && loading !== LoadingStatus.No && <div className={classes["ticket-list__empty"]}>Empty</div>}
       {tickets.length !== 0 && <Button onClick={() => setLimit(prev => prev + 5)} />}
     </main>
   );
