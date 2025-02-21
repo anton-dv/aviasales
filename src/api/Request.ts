@@ -20,16 +20,5 @@ export class Request {
     if(!response) return null;
     return response;
   }
-
-  static async loadImage(ita: string): Promise<string | null> {
-    return await axios.get(`https://pics.avs.io/110/36/${ita}.png`, { responseType: 'arraybuffer' })
-      .then(response => {
-        const blob = new Blob(
-          [response.data],
-          { type: response.headers['content-type'] }
-        )
-        return URL.createObjectURL(blob);
-      }).catch(() => null);
-  }
 }
 
